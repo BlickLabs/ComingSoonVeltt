@@ -18,14 +18,14 @@ Project:  Pogody
 @import 'inputtext.css'
 
 // Dark theme
-$primery_color = #fff
-$background_color = #000
-$secondery_color = #000
+// $primery_color = #fff
+// $background_color = #000
+// $secondery_color = #000
 
 // Light theme
-// $primery_color = #000
-// $background_color = #fff
-// $secondery_color = #fff
+$primery_color = #000
+$background_color = #fff
+$secondery_color = #fff
 
 // Cover text colour
 $cover_text_color = #fff
@@ -101,13 +101,13 @@ a:focus
 
 h1
   color $primery_color
-  font-size 80px
+  font-size 70px
   letter-spacing -1px
   font-weight 600
 
 h3
   @extend h1
-  font-size 55px
+  font-size 45px
   font-weight 600
   text-transform capitalize
   letter-spacing -1px
@@ -207,7 +207,7 @@ p
 p.tagline
   font-size 30px
   font-weight 600
-  line-height 45px
+  line-height 38px
   letter-spacing -1px
 
 .side-right
@@ -241,7 +241,7 @@ p.tagline
       padding-top 10px
 
   .counter-content
-    padding-top 35%
+    padding-top 30%
     
     p.tagline
       color $cover_text_color
@@ -702,7 +702,7 @@ rotate()
       border-color $primery_color
 
   h3
-    padding-bottom 52px
+    padding-bottom 42px
 
   .form-group
     margin-bottom 24px
@@ -787,6 +787,9 @@ rotate()
   bottom 25px
   left 15px
   position absolute
+  
+  li
+    color $primery_color !important
 
   i
     line-height 25px
@@ -1002,7 +1005,7 @@ border-widthc()
 /*****************************************************/
 @media only screen and (max-width: 1710px)
   h1
-    font-size 65px
+    font-size 50px
 
   .open-left .about
     left 30px
@@ -1013,10 +1016,10 @@ border-widthc()
 @media only screen and (max-width: 1530px)
   h1, h3, .side-right #countdown span,
   .side-right #countdown li.seperator
-    font-size 50px
+    font-size 40px
 
   h3
-    font-size 35px
+    font-size 28px
 
   .detail-info
     padding-top 8%
@@ -1090,15 +1093,15 @@ border-widthc()
 
 @media only screen and (max-width: 1082px)
   h1
-    font-size 40px
+    font-size 30px
 
   h3
-    font-size 30px
+    font-size 24px
 
   p.tagline, 
   .address-detail a.tagline
     font-size 20px
-    line-height 35px
+    line-height 29px
 
   .side-right
     #countdown
@@ -1141,14 +1144,14 @@ border-widthc()
 
 @media only screen and (max-width: 870px)
   h1
-    font-size 30px
+    font-size 25px
 
   h3
-    font-size 30px
+    font-size 24px
 
   p.tagline, .address-detail a.tagline
     font-size 18px
-    line-height 30px
+    line-height 25px
 
   .copyright p, .copyright .address-detail a
     font-size 12px
@@ -1175,10 +1178,10 @@ border-widthc()
 
 @media only screen and (max-width: 766px)
   h1
-    font-size 50px
+    font-size 40px
 
   h3
-    font-size 30px
+    font-size 24px
 
   .side
     position relative
@@ -1320,4 +1323,4 @@ border-widthc()
 
 @media only screen and (max-width: 414px)
   h1
-    font-size 35px
+    font-size 25px
