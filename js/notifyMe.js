@@ -20,6 +20,7 @@
 		var $this = $(this);
 		var input = $(this).find("input[name=email]");
 		var button = $(this).find("button");
+		var loader = $(this).closest(".notify-wrap").children(".loader-container");
 		
 		var action = $(this).attr("action");
 		var note = $(this).find(".note");
@@ -30,6 +31,7 @@
 		var iconError = "fa fa-exclamation-circle";
 
 		input.after(icon);
+		loader.hide();
 	  
 		$(this).on("submit", function(e){
 			e.preventDefault();
@@ -41,6 +43,8 @@
 			
 			if(re.test(email)) {
 				button.attr('disabled', 'disabled');
+				loader.show();
+
 				icon.removeClass();
 				icon.addClass(iconProcess);
 				$(this).removeClass("error success");
@@ -58,6 +62,8 @@
 						
 						note.hide();
 						button.removeAttr('disabled');
+						loader.hide();
+
 						// Change the icon to error
 						icon.removeClass();
 						icon.addClass(iconError);
@@ -74,6 +80,7 @@
 					// Hide note
 					note.hide();
 					button.removeAttr('disabled');
+					loader.hide();
 				
 					if(data.status == "success") {
 						// Add success class to form
